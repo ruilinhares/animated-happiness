@@ -16,7 +16,7 @@ int verificaSolucao(int colocados[3][4]){
     printf("X = %d , Y = %d\n", pontoX0, pontoY0);
     for(i = 0; i < 3; i++){
         if(colocados[i][2] == pontoX0 && colocados[i][3] == pontoY0){
-            for (int j = 0; j < 3; ++j) {
+            for (int j = 0; j < 3; j++) {
                 printf("%d,%d,%d,%d\n",colocados[j][0],colocados[j][1],colocados[j][2],colocados[j][3]);
             }
             printf("---------------\n");
@@ -33,25 +33,6 @@ int recursiva(int retangulo[2], int pontos[4][2], int colocados[3][4], int resta
     for(i = 0; i < 4; i++){
         if(pontos[i][0] != -1){
             printf("Ola, vou por o retangulo %d,%d em %d,%d\n",retangulo[0],retangulo[1],pontos[i][0],pontos[i][1]);
-            int pontosBackupA[4][2];
-            int colocadosBackupA[3][4];
-            int restantesBackupA[3][2];
-            int i1, i2;
-            for(i1 = 0; i1 < 4; i1++){
-                for(i2 = 0; i2 < 2; i2++){
-                    pontosBackupA[i1][i2] = pontos[i1][i2];
-                }
-            }
-            for(i1 = 0; i1 < 3; i1++){
-                for(i2 = 0; i2 < 4; i2++){
-                    colocadosBackupA[i1][i2] = colocados[i1][i2];
-                }
-            }
-            for(i1 = 0; i1 < 3; i1++){
-                for(i2 = 0; i2 < 2; i2++){
-                    restantesBackupA[i1][i2] = restantes[i1][i2];
-                }
-            }
             for(j = 0; j < 3; j++){
                 if(colocados[j][0] == -1){
                     colocados[j][0] = pontos[i][0];
