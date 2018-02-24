@@ -57,38 +57,38 @@ include CMakeFiles/Problema1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Problema1.dir/flags.make
 
-CMakeFiles/Problema1.dir/main.c.o: CMakeFiles/Problema1.dir/flags.make
-CMakeFiles/Problema1.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/soren5/Work/uni/3_2/LPA/big_boy_1_moosha/animated-happiness/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Problema1.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Problema1.dir/main.c.o   -c /home/soren5/Work/uni/3_2/LPA/big_boy_1_moosha/animated-happiness/main.c
+CMakeFiles/Problema1.dir/true_main.c.o: CMakeFiles/Problema1.dir/flags.make
+CMakeFiles/Problema1.dir/true_main.c.o: ../true_main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/soren5/Work/uni/3_2/LPA/big_boy_1_moosha/animated-happiness/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Problema1.dir/true_main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Problema1.dir/true_main.c.o   -c /home/soren5/Work/uni/3_2/LPA/big_boy_1_moosha/animated-happiness/true_main.c
 
-CMakeFiles/Problema1.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Problema1.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/soren5/Work/uni/3_2/LPA/big_boy_1_moosha/animated-happiness/main.c > CMakeFiles/Problema1.dir/main.c.i
+CMakeFiles/Problema1.dir/true_main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Problema1.dir/true_main.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/soren5/Work/uni/3_2/LPA/big_boy_1_moosha/animated-happiness/true_main.c > CMakeFiles/Problema1.dir/true_main.c.i
 
-CMakeFiles/Problema1.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Problema1.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/soren5/Work/uni/3_2/LPA/big_boy_1_moosha/animated-happiness/main.c -o CMakeFiles/Problema1.dir/main.c.s
+CMakeFiles/Problema1.dir/true_main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Problema1.dir/true_main.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/soren5/Work/uni/3_2/LPA/big_boy_1_moosha/animated-happiness/true_main.c -o CMakeFiles/Problema1.dir/true_main.c.s
 
-CMakeFiles/Problema1.dir/main.c.o.requires:
+CMakeFiles/Problema1.dir/true_main.c.o.requires:
 
-.PHONY : CMakeFiles/Problema1.dir/main.c.o.requires
+.PHONY : CMakeFiles/Problema1.dir/true_main.c.o.requires
 
-CMakeFiles/Problema1.dir/main.c.o.provides: CMakeFiles/Problema1.dir/main.c.o.requires
-	$(MAKE) -f CMakeFiles/Problema1.dir/build.make CMakeFiles/Problema1.dir/main.c.o.provides.build
-.PHONY : CMakeFiles/Problema1.dir/main.c.o.provides
+CMakeFiles/Problema1.dir/true_main.c.o.provides: CMakeFiles/Problema1.dir/true_main.c.o.requires
+	$(MAKE) -f CMakeFiles/Problema1.dir/build.make CMakeFiles/Problema1.dir/true_main.c.o.provides.build
+.PHONY : CMakeFiles/Problema1.dir/true_main.c.o.provides
 
-CMakeFiles/Problema1.dir/main.c.o.provides.build: CMakeFiles/Problema1.dir/main.c.o
+CMakeFiles/Problema1.dir/true_main.c.o.provides.build: CMakeFiles/Problema1.dir/true_main.c.o
 
 
 # Object files for target Problema1
 Problema1_OBJECTS = \
-"CMakeFiles/Problema1.dir/main.c.o"
+"CMakeFiles/Problema1.dir/true_main.c.o"
 
 # External object files for target Problema1
 Problema1_EXTERNAL_OBJECTS =
 
-Problema1: CMakeFiles/Problema1.dir/main.c.o
+Problema1: CMakeFiles/Problema1.dir/true_main.c.o
 Problema1: CMakeFiles/Problema1.dir/build.make
 Problema1: CMakeFiles/Problema1.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/soren5/Work/uni/3_2/LPA/big_boy_1_moosha/animated-happiness/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable Problema1"
@@ -99,7 +99,7 @@ CMakeFiles/Problema1.dir/build: Problema1
 
 .PHONY : CMakeFiles/Problema1.dir/build
 
-CMakeFiles/Problema1.dir/requires: CMakeFiles/Problema1.dir/main.c.o.requires
+CMakeFiles/Problema1.dir/requires: CMakeFiles/Problema1.dir/true_main.c.o.requires
 
 .PHONY : CMakeFiles/Problema1.dir/requires
 

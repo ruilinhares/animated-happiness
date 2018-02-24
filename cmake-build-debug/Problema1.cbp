@@ -84,7 +84,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/soren5/Work/uni/3_2/LPA/big_boy_1_moosha/animated-happiness/main.c">
+		<Unit filename="/home/soren5/Work/uni/3_2/LPA/big_boy_1_moosha/animated-happiness/true_main.c">
 			<Option target="Problema1"/>
 		</Unit>
 		<Unit filename="/home/soren5/Work/uni/3_2/LPA/big_boy_1_moosha/animated-happiness/CMakeLists.txt">
