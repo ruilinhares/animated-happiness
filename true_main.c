@@ -6,10 +6,12 @@
 #define NUM_RETANGULOS 3 /*Numero de retangulos a colocar*/
 #define MAX_POI 100
 #define DEBUG 1
-/*int solucoes[10000][NUM_RETANGULOS][4];*/
+#define MAX_SOLUTIONS 10000
+int solucoes[MAX_SOLUTIONS][NUM_RETANGULOS][4];
 int iteracoes = 0;
 int numeroSolucoes = 0;
 int recursivas = 0;
+int proximaSolucao = 0;
 
 /*Espaco de solucoes, cada solucao individual e descrita por dois pontos que descrevem a posicao de cada retangulo
 solucoes[i][j][0] = coordenada x do canto inferior esquerdo
@@ -40,6 +42,11 @@ int verificarSolucao(int solucao[NUM_RETANGULOS][4]){
         if(solucao[i][2] == xMaximo && solucao[i][3] == yMaximo){
             for(j = 0; j < NUM_RETANGULOS; j++){
                 if(DEBUG) printf("%d, %d, %d, %d\n", solucao[j][0], solucao[j][1], solucao[j][2], solucao[j][3]);
+                solucoes[proximaSolucao][j][0] = solucao[j][0];
+                solucoes[proximaSolucao][j][1] = solucao[j][1];
+                solucoes[proximaSolucao][j][2] = solucao[j][2];
+                solucoes[proximaSolucao][j][3] = solucao[j][3];
+                proximaSolucao++;
             }
             if(DEBUG) printf("----------------------------\n");
             numeroSolucoes += 1;
@@ -148,6 +155,7 @@ int main(){
     int retanguloPorColocar[NUM_RETANGULOS][2];
     int i = 0;
     int j = 0;
+    int k = 0;
     for(i = 0; i < NUM_RETANGULOS ; i++){
         for(j = 0; j < 4; j++){
             solucao[i][j] = -1;
@@ -156,6 +164,14 @@ int main(){
     for(i = 0; i <= MAX_POI; i++){
         for(j = 0; j < 2; j++){
             pontosInteresse[i][j] = -1;
+        }
+    }
+    for(i = 0; i <MAX_SOLUTIONS; i++){
+        for(j = 0; j < NUM_RETANGULOS; j++){
+            solucoes[i][j][0] = -1;
+            solucoes[i][j][1] = -1;
+            solucoes[i][j][2] = -1;
+            solucoes[i][j][3] = -1;
         }
     }
     pontosInteresse[0][0] = 0;
@@ -187,6 +203,15 @@ int main(){
     printf("Numero de recursivas %d\n", recursivas);
     printf("Numero de iteracoes %d\n", iteracoes);
     printf("Numero de solucoes %d\n", numeroSolucoes);
+    int check;
+    for(i = 0; i <MAX_SOLUTIONS; i++){
+        for(j = i; j <MAX_SOLUTIONS; j++){
+            check = 1;
+            for(k = 0; k < NUM_RETANGULOS; k++){
+                if(solucoes[i][k][2] != solucoes[j][k][2] || solucoes)
+            }
+        }
+    }
     return 0;
 }
 
