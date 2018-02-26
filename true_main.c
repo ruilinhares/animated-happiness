@@ -40,6 +40,8 @@ int verificarRepetida(int solucao[NUM_RETANGULOS][4]){
     return 1;
 }
 
+int verificarArea
+
 int verificarSolucao(int solucao[NUM_RETANGULOS][4]){
     /*Para verificar a solucao vamos encontrar o ponto mais alto no eixo do X e do Y, se o ultimo canto colocado
      * estiver alinhado com estes valores, a solucao e valida*/
@@ -204,7 +206,6 @@ int main(){
     pontosInteresse[0][0] = 0;
     pontosInteresse[0][1] = 0;
 
-
     retanguloPorColocar[0][0] = 4;
     retanguloPorColocar[0][1] = 12;
     retanguloPorColocar[1][0] = 6;
@@ -213,12 +214,13 @@ int main(){
     retanguloPorColocar[2][1] = 6;
 
 
-    /*
+     /*
     retanguloPorColocar[0][0] = 5;
     retanguloPorColocar[0][1] = 6;
     retanguloPorColocar[1][0] = 5;
     retanguloPorColocar[1][1] = 6;
      */
+
     int auxiliar[2];
     auxiliar[0] = -1;
     auxiliar[1] = -1;
